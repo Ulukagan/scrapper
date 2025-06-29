@@ -50,7 +50,7 @@ end_date = wait.until(EC.presence_of_element_located(
 driver.execute_script("arguments[0].value = '02.01.2017';", start_date)
 driver.execute_script("arguments[0].dispatchEvent(new Event('input'));", start_date)
 
-driver.execute_script("arguments[0].value = '13.06.2025';", end_date)
+driver.execute_script("arguments[0].value = '30.06.2025';", end_date)
 driver.execute_script("arguments[0].dispatchEvent(new Event('input'));", end_date)
 
 search_btn = WebDriverWait(driver, 10).until(
